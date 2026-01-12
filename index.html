@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<title>AI Content Factory v4</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="layout">
+
+  <!-- LEFT COMMAND PANEL -->
+  <aside class="panel">
+    <h2>🎛 Control Panel</h2>
+
+    <button onclick="cmd('init')">▶️ เริ่มระบบ</button>
+    <button onclick="cmd('fetch')">📥 ดึงข้อมูลสินค้า</button>
+    <button onclick="cmd('image')">🖼 สร้างภาพ AI</button>
+    <button onclick="cmd('prompt')">🧠 สร้าง Prompt วิดีโอ</button>
+    <button onclick="cmd('export')">📦 Export for Veo</button>
+    <button class="danger" onclick="cmd('stop')">⛔ หยุดการทำงาน</button>
+
+  </aside>
+
+  <!-- MAIN VIEW -->
+  <main class="main">
+    <h1>🏭 AI Content Factory v4</h1>
+    <p class="subtitle">Command-based Flow (เหมือน Extension)</p>
+
+    <div id="preview"></div>
+  </main>
+
+</div>
+
+<!-- STATUS BAR -->
+<footer>
+  <span id="statusText">🟢 ระบบพร้อม</span>
+  <div class="progress"><div id="progress"></div></div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
